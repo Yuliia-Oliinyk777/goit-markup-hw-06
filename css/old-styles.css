@@ -437,7 +437,14 @@ a {
   justify-content: center;
 }
 
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 .footer-icon-item {
+  display: flex;
   background-color: #4d5ae5;
   border-radius: 50%;
   width: 40px;
@@ -448,18 +455,6 @@ a {
 .footer-icon-item:focus {
   background-color: #31d0aa;
 }
-.footer-icon-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-.footer-icon-item {
-  display: flex;
-  width: 40px;
-  height: 40px;
-}
-
 .icon-link {
   fill: #f4f4fd;
 }
