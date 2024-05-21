@@ -426,7 +426,7 @@ a {
 .feature-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  row-gap: 72px;
 }
 
 .feature-subtitle {
@@ -448,7 +448,8 @@ a {
   .feature-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+
     align-items: center;
   }
   .feature-list-item {
@@ -512,7 +513,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 72px;
+  row-gap: 72px;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -579,7 +580,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
   .team-list-item {
     width: calc ((100%-24px) / 2);
@@ -673,7 +675,8 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .portfolio-list-item {
     width: calc((100%-24px) / 2);
@@ -681,6 +684,9 @@ a {
   }
 }
 @media screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
   .portfolio-list-item {
     width: calc((100%-48px) / 3);
     box-shadow: none;
@@ -709,6 +715,8 @@ a {
 .footer-container {
   display: flex;
   flex-direction: column;
+  row-gap: 72px;
+  align-items: center;
 }
 
 .logo-footer {
@@ -732,7 +740,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-bottom: 72px;
 }
 
 .footer-text-media {
@@ -749,7 +756,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 .footer-icon-item {
   display: flex;
@@ -836,10 +842,9 @@ a {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: baseline;
+    justify-content: center;
     column-gap: 24px;
-    row-gap: 72px;
   }
   .logo-footer {
     text-align: left;
@@ -848,7 +853,7 @@ a {
     width: 264px;
   }
   .footer-form-subscribe-wrapper {
-    margin-left: 108px;
+    margin-left: 120px;
   }
   .footer-form-subscribe {
     display: flex;
@@ -871,9 +876,6 @@ a {
   .footer-wrapper {
     margin-right: 120px;
   }
-  .footer-text {
-    margin-bottom: 0;
-  }
   .social-media {
     margin-right: 80px;
   }
@@ -881,7 +883,7 @@ a {
     background-color: #31d0aa;
   }
   .footer-form-subscribe-wrapper {
-    margin-left: 0;
+    margin-left: auto;
   }
   .footer-form-input {
     opacity: 1;
